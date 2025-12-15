@@ -1,5 +1,7 @@
 
 # AI-Driven Email Performance Interpretation Framework 
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Status](https://img.shields.io/badge/Status-Active-success)
 
 ## Overview
 
@@ -52,21 +54,23 @@ For each theme, the system produces:
 ---
 
 ## Repository Structure
-AI-Driven Email Performance Interpretation Framework/
-│
-├── 01_Data_Generator.ipynb
-│   └─ Generates a synthetic, multi-year email campaign dataset
-│      (non-PII, reproducible, configurable size)
-│
-├── 02_AI_Email_Insight_Model.ipynb
-│   └─ Core AI pipeline:
-│      embeddings → clustering → AI labeling → recommendations
-│
-├── email_campaigns_synth_780.csv        (generated)
-├── email_campaigns_enriched_ai.csv      (generated)
-├── cluster_summary_ai.json              (generated)
-│
-└── README.md
+
+    AI-Driven Email Performance Interpretation Framework/
+    │
+    ├── 01_Data_Generator.ipynb
+    │   └─ Generates a synthetic, multi-year email campaign dataset
+    │      (non-PII, reproducible, configurable size)
+    │
+    ├── 02_AI_Email_Insight_Model.ipynb
+    │   └─ Core AI pipeline:
+    │      embeddings → clustering → AI labeling → recommendations
+    │
+    ├── email_campaigns_synth_780.csv        (generated)
+    ├── email_campaigns_enriched_ai.csv      (generated)
+    ├── cluster_summary_ai.json              (generated)
+    │
+    └── README.md
+
 
 
 ---
@@ -92,8 +96,8 @@ Designed to simulate real-world marketing data without using real customer data.
 Uploads the dataset interactively in Google Colab.
 
 Runs the full AI interpretation pipeline:
-- embeddings,  
-- clustering,  
+- semantic embeddings,  
+- unsupervised clustering,  
 - LLM-based theme labeling,  
 - performance analysis,  
 - recommendation generation.
@@ -102,6 +106,19 @@ Outputs:
 - an enriched campaign-level CSV,  
 - a JSON summary of themes and recommendations,  
 - optional visualizations.
+
+---
+## Run in Google Colab
+
+### Open Notebook 1 — Data Generator
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
+https://colab.research.google.com/github/ritikade2/ai-email-performance-interpretation/blob/main/01_Data_Generator.ipynb
+)
+
+### Open Notebook 2 — AI Email Insight Model
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
+https://colab.research.google.com/github/ritikade2/ai-email-performance-interpretation/blob/main/02_AI_Email_Insight_Model.ipynb
+)
 
 ---
 
@@ -117,10 +134,10 @@ Outputs:
 
 ## Design Principles
 
-- Privacy-aware: uses synthetic or non-PII data only.  
-- Reproducible: modular notebooks with clear separation of data generation and modeling.  
-- Scalable: designed to handle hundreds of campaigns efficiently.  
-- Interpretability-focused: emphasizes explanation and insight, not just prediction.
+- **Privacy-aware:** uses synthetic or non-PII data only.  
+- **Reproducible:** modular notebooks with clear separation of data generation and modeling.  
+- **Scalable:** designed to handle hundreds of campaigns efficiently.  
+- **Interpretability-focused:** emphasizes explanation and insight, not just prediction.
 
 ---
 
